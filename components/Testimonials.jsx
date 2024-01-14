@@ -8,7 +8,7 @@ export default function Testimonials({ data }) {
             <div className="max-w-7xl mx-auto px-10">
                 <div className="flex flex-col mb-7 sm:mb-20 items-start md:items-center justify-center">
                     <p className="sm:tracking-widest sm:text-base text-sm uppercase font-medium text-gray-500">What people are saying about us</p>
-                    <h2 className="text-gray-900 mt-2 text-2xl sm:text-4xl tracking-tight font-bold sm:font-extrabold md:text-5xl dark:text-white">Don't just take our word for it.</h2>
+                    <h2 className="text-gray-900 mt-2 text-2xl sm:text-4xl tracking-tight font-bold sm:font-extrabold md:text-5xl dark:text-white">Don&apos;t just take our word for it.</h2>
                     <div className="mt-1 md:mt-4 items-center flex text-blue-600">
                         <svg className="w-8 h-8 sm:block hidden mr-1.5 mt-0.5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <path fillRule="evenodd" d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z" clipRule="evenodd"></path>

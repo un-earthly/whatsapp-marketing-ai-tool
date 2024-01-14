@@ -7,7 +7,7 @@ export default function Pricing() {
               <div class="max-w-3xl mx-auto mb-12 text-center lg:mb-20">
                   <span class="text-sm font-semibold text-green-500">Our Subscription Plans</span>
                   <h2 class="mt-3 mb-10 text-4xl font-bold font-heading">Simple, Flexible Pricing</h2>
-                  <p class="mb-16 text-xl text-gray-500">Explore our pricing plans: the Light Plan for growing businesses and the Unlimited Plan for expansive needs, each tailored to elevate your business's communication strategy.</p>
+                  <p class="mb-16 text-xl text-gray-500">Explore our pricing plans: the Light Plan for growing businesses and the Unlimited Plan for expansive needs, each tailored to elevate your business&apos;s communication strategy.</p>
               </div>
 
               <div class="px-6 py-6 mb-6 lg:pl-12 lg:pr-6 bg-gray-50 rounded-xl">
