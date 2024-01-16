@@ -8,6 +8,7 @@ import Demo from '@/components/Demo'
 import Features from '@/components/Features'
 import MarketingBanner from '@/components/MarketingBanner'
 import Testimonials from '@/components/Testimonials'
+import SingleFeatureSection from '@/components/SingleFeatureSection'
 
 export default function Home() {
   const testimonialsData = [
@@ -73,8 +74,8 @@ export default function Home() {
       <Features />
       <Demo />
       <MarketingBanner />
+      <SingleFeatureSection />
       <Testimonials data={testimonialsData} />
-
       <Pricing />
       <Faq />
       <Footer />
