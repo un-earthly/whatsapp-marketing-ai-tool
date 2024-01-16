@@ -4,7 +4,7 @@ export default function SingleFeatureSection() {
     return (
         <div className='flex items-center justify-center flex-col my-10 max-w-7xl mx-auto px-10'>
             <h2 class="mt-3 mb-10 text-4xl font-bold font-heading">Simple, Flexible All In One Platform</h2>
-            <p class="mb-16 text-xl text-gray-500 text-center xl:w-2/3 w-full">Explore our pricing plans: the Light Plan for growing businesses and the Unlimited Plan for expansive needs, each tailored to elevate your business's communication strategy.</p>
+            <p class="mb-16 text-xl text-gray-500 text-center xl:w-2/3 w-full">Explore our pricing plans: the Light Plan for growing businesses and the Unlimited Plan for expansive needs, each tailored to elevate your business&apos;s communication strategy.</p>
             <div className='flex'>
                 <div className='space-y-5'>
                     <div className="text-2xl font-bold">Lorem</div>

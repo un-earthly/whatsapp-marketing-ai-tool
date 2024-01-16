@@ -64,24 +64,24 @@ export const Nav = () => {
                                         <img src="https://site.sessions.flowos.com/_content/images/subscriptions.svg" alt="" />
                                         <div>
                                             <p >Ultra HD Video and Audio</p>
-                                            <p className="text-sm font-light">Everything you'd expect from a top videoconferencing platform and more.</p>
+                                            <p className="text-sm font-light">Everything you&apos;d expect from a top videoconferencing platform and more.</p>
                                         </div>
                                     </div>
                                     <div className="flex space-x-3">
                                         <img src="https://site.sessions.flowos.com/_content/images/subscriptions.svg" alt="" />
                                         <div>
                                             <p >Ultra HD Video and Audio</p>
-                                            <p className="text-sm font-light">Everything you'd expect from a top videoconferencing platform and more.</p>
+                                            <p className="text-sm font-light">Everything you&apos;d expect from a top videoconferencing platform and more.</p>
                                         </div>
                                     </div>
                                     <div className="flex space-x-3">
                                         <img src="https://site.sessions.flowos.com/_content/images/subscriptions.svg" alt="" />
                                         <div>
                                             <p >Ultra HD Video and Audio</p>
-                                            <p className="text-sm font-light">Everything you'd expect from a top videoconferencing platform and more.</p>
+                                            <p className="text-sm font-light">Everything you&apos;d expect from a top videoconferencing platform and more.</p>
                                         </div>
                                     </div>
-                               </div>
+                                </div>
                                 {/* <a href="?lang=EN" className="block px-4 py-3 text-sm text-gray-700 capitalize cursor-pointer hover:bg-gray-50 rounded-xl hover:text-gray-800" data-rounded="rounded-xl">
                                     English
                                 </a>
