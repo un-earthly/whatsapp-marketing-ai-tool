@@ -5,9 +5,11 @@ import { useState } from "react";
 export const Nav = () => {
     const [mobile, setMobile] = useState(false);
     const [languageMenuOpen, setLanguageMenuOpen] = useState(false);
+    const [featuresOpen, setFeaturesOpen] = useState(false);
 
     const toggleMobileMenu = () => setMobile(!mobile);
     const toggleLanguageMenu = () => setLanguageMenuOpen(!languageMenuOpen);
+    const toggleFeatures = () => setFeaturesOpen(!featuresOpen);
 
     return (
         <>
@@ -42,7 +44,52 @@ export const Nav = () => {
 
                 <div className={`left-0 z-10 items-center justify-center w-full font-semibold select-none md:flex lg:absolute ${mobile ? 'flex' : 'hidden'}`}>
                     <div className="flex flex-col justify-center w-full mt-4 space-y-2 md:mt-0 md:flex-row md:space-x-6 lg:space-x-10 xl:space-x-16 md:space-y-0">
-                        <a className="py-3 text-gray-800 hover:text-gray-700 hover:underline" href="#features">Features</a>
+                        {/* <a className="py-3 text-gray-800 hover:text-gray-700 hover:underline" href="#features">Features</a> */}
+                        <div onMouseEnter={toggleFeatures} onMouseLeave={toggleFeatures} className="relative py-3">
+                            <div className="relative z-10 flex items-center space-x-1 text-gray-800 cursor-pointer lg:space-x-3 hover:text-gray-700 focus:outline-none">
+                                <span>
+                                    <span className="nav-link-inner--text">Features</span>
+                                </span>
+                                <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd"></path>
+                                </svg>
+                            </div>
+
+                            <div
+                                style={{ display: featuresOpen ? 'block' : 'none' }}
+                                className="absolute left-0 z-20 z-30 w-full p-3 lg:p-10 mt-3 -ml-0 space-y-2 overflow-hidden transform bg-gray-200 shadow-lg lg:left-1/2 lg:-ml-24 md:w-[800px] rounded-xl ring-1 ring-black ring-opacity-5"
+                            >
+                                <div className="grid grid-cols-2 gap-10">
+                                    <div className="flex space-x-3">
+                                        <img src="https://site.sessions.flowos.com/_content/images/subscriptions.svg" alt="" />
+                                        <div>
+                                            <p >Ultra HD Video and Audio</p>
+                                            <p className="text-sm font-light">Everything you'd expect from a top videoconferencing platform and more.</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex space-x-3">
+                                        <img src="https://site.sessions.flowos.com/_content/images/subscriptions.svg" alt="" />
+                                        <div>
+                                            <p >Ultra HD Video and Audio</p>
+                                            <p className="text-sm font-light">Everything you'd expect from a top videoconferencing platform and more.</p>
+                                        </div>
+                                    </div>
+                                    <div className="flex space-x-3">
+                                        <img src="https://site.sessions.flowos.com/_content/images/subscriptions.svg" alt="" />
+                                        <div>
+                                            <p >Ultra HD Video and Audio</p>
+                                            <p className="text-sm font-light">Everything you'd expect from a top videoconferencing platform and more.</p>
+                                        </div>
+                                    </div>
+                               </div>
+                                {/* <a href="?lang=EN" className="block px-4 py-3 text-sm text-gray-700 capitalize cursor-pointer hover:bg-gray-50 rounded-xl hover:text-gray-800" data-rounded="rounded-xl">
+                                    English
+                                </a>
+                                <a href="?lang=FR" className="block px-4 py-3 text-sm text-gray-700 capitalize cursor-pointer hover:bg-gray-50 rounded-xl hover:text-gray-800" data-rounded="rounded-xl">
+                                    French
+                                </a> */}
+                            </div>
+                        </div>
                         <a className="py-3 text-gray-800 hover:text-gray-700 hover:underline" href="#demo">Demo</a>
                         <a className="py-3 text-gray-800 hover:text-gray-700 hover:underline" href="#pricing">Pricing</a>
                         <a className="py-3 text-gray-800 hover:text-gray-700 hover:underline" href="#faq">FAQ</a>
@@ -60,8 +107,6 @@ export const Nav = () => {
                             <div
                                 style={{ display: languageMenuOpen ? 'block' : 'none' }}
                                 className="absolute left-0 z-20 z-30 w-full p-3 mt-3 -ml-0 space-y-2 overflow-hidden transform bg-white shadow-lg lg:left-1/2 lg:-ml-24 md:w-48 rounded-xl ring-1 ring-black ring-opacity-5"
-                                data-rounded="rounded-xl"
-                                data-rounded-max="rounded-full"
                             >
                                 <a href="?lang=EN" className="block px-4 py-3 text-sm text-gray-700 capitalize cursor-pointer hover:bg-gray-50 rounded-xl hover:text-gray-800" data-rounded="rounded-xl">
                                     English
