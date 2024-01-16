@@ -18,9 +18,9 @@ export default function Faq() {
     ]
     return (
         <section id="faq" className="py-16 bg-white md:py-20 lg:py-24">
-            <div className="max-w-5xl px-12 mx-auto xl:px-0">
+            <div className="max-w-6xl px-12 mx-auto xl:px-0">
                 <h2 class="text-3xl font-black md:text-4xl lg:text-6xl xl:text-7xl">Frequently Asked Questions</h2>
-                <p className="mt-4 text-xl font-thin text-gray-700 lg:text-2xl">Here are some of the most common frequently asked questions</p>
+                <p className="mt-4 text-xl font-[300] text-gray-700 lg:text-2xl">Here are some of the most common frequently asked questions</p>
 
                 <div className="relative mt-12 space-y-3">
                     {[

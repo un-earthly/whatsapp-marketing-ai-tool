@@ -3,7 +3,11 @@
 import { useState } from "react";
 
 export const Nav = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [mobile, setMobile] = useState(false);
+    const [languageMenuOpen, setLanguageMenuOpen] = useState(false);
+
+    const toggleMobileMenu = () => setMobile(!mobile);
+    const toggleLanguageMenu = () => setLanguageMenuOpen(!languageMenuOpen);
 
     return (
         <>
@@ -19,218 +23,64 @@ export const Nav = () => {
                 </a>
 
             </div>
-            <div class="bg-white">
-                <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-                    <div class="relative flex items-center justify-between">
-                        <a
-                            href="/"
-                            aria-label="Company"
-                            title="Company"
-                            class="inline-flex items-center"
-                        >
-                            <svg
-                                class="w-8 text-teal-accent-400"
-                                viewBox="0 0 24 24"
-                                strokeLinejoin="round"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeMiterlimit="10"
-                                stroke="currentColor"
-                                fill="none"
-                            >
-                                <rect x="3" y="1" width="7" height="12" />
-                                <rect x="3" y="17" width="7" height="6" />
-                                <rect x="14" y="1" width="7" height="6" />
-                                <rect x="14" y="11" width="7" height="12" />
-                            </svg>
-                            <span class="ml-2 text-xl font-bold tracking-wide text-gray-900 uppercase">
-                                Company
-                            </span>
+            <nav className="relative mt-10 mx-auto md:pb-6 max-w-7xl md:flex md:justify-between md:items-center">
+                <div className="relative z-20 flex items-center justify-between">
+                    <div>
+                        <a className="text-xl font-bold text-gray-800 md:text-2xl hover:text-gray-700" href="#top">
+                            <img style={{ maxHeight: '40px' }} src="https://wpbox.mobidonia.com/uploads/default/logo.png" alt="" />
                         </a>
-                        <ul class="flex items-center hidden space-x-8 lg:flex">
-                            <li>
-                                <a
-                                    href="/"
-                                    aria-label="Our product"
-                                    title="Our product"
-                                    class="font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400"
-                                >
-                                    Product
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="/"
-                                    aria-label="Our product"
-                                    title="Our product"
-                                    class="font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400"
-                                >
-                                    Features
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="/"
-                                    aria-label="Product pricing"
-                                    title="Product pricing"
-                                    class="font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400"
-                                >
-                                    Pricing
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="/"
-                                    aria-label="About us"
-                                    title="About us"
-                                    class="font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-teal-accent-400"
-                                >
-                                    About us
-                                </a>
-                            </li>
-                        </ul>
-                        <ul class="flex items-center hidden space-x-8 lg:flex">
-                            <li>
-                                <a
-                                    href="/"
-                                    class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-gray-900 transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-                                    aria-label="Sign up"
-                                    title="Sign up"
-                                >
-                                    Sign up
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="lg:hidden">
-                            <button
-                                aria-label="Open Menu"
-                                title="Open Menu"
-                                class="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline"
-                                onClick={() => setIsMenuOpen(true)}
-                            >
-                                <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
-                                    <path
-                                        fill="currentColor"
-                                        d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"
-                                    />
-                                    <path
-                                        fill="currentColor"
-                                        d="M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z"
-                                    />
-                                    <path
-                                        fill="currentColor"
-                                        d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"
-                                    />
+                    </div>
+
+                    <div onClick={toggleMobileMenu} className="flex md:hidden">
+                        <button type="button" className="text-gray-500 hover:text-gray-600 focus:outline-none focus:text-gray-600" aria-label="toggle menu">
+                            <svg viewBox="0 0 24 24" className="w-6 h-6 fill-current">
+                                <path fillRule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div className={`left-0 z-10 items-center justify-center w-full font-semibold select-none md:flex lg:absolute ${mobile ? 'flex' : 'hidden'}`}>
+                    <div className="flex flex-col justify-center w-full mt-4 space-y-2 md:mt-0 md:flex-row md:space-x-6 lg:space-x-10 xl:space-x-16 md:space-y-0">
+                        <a className="py-3 text-gray-800 hover:text-gray-700 hover:underline" href="#features">Features</a>
+                        <a className="py-3 text-gray-800 hover:text-gray-700 hover:underline" href="#demo">Demo</a>
+                        <a className="py-3 text-gray-800 hover:text-gray-700 hover:underline" href="#pricing">Pricing</a>
+                        <a className="py-3 text-gray-800 hover:text-gray-700 hover:underline" href="#faq">FAQ</a>
+
+                        <div onMouseEnter={toggleLanguageMenu} onMouseLeave={toggleLanguageMenu} className="relative py-3">
+                            <div className="relative z-10 flex items-center space-x-1 text-gray-800 cursor-pointer lg:space-x-3 hover:text-gray-700 focus:outline-none">
+                                <span>
+                                    <span className="nav-link-inner--text">English</span>
+                                </span>
+                                <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd"></path>
                                 </svg>
-                            </button>
-                            {isMenuOpen && (
-                                <div class="absolute top-0 left-0 w-full">
-                                    <div class="p-5 bg-white border rounded shadow-sm">
-                                        <div class="flex items-center justify-between mb-4">
-                                            <div>
-                                                <a
-                                                    href="/"
-                                                    aria-label="Company"
-                                                    title="Company"
-                                                    class="inline-flex items-center"
-                                                >
-                                                    <svg
-                                                        class="w-8 text-deep-purple-accent-400"
-                                                        viewBox="0 0 24 24"
-                                                        strokeLinejoin="round"
-                                                        strokeWidth="2"
-                                                        strokeLinecap="round"
-                                                        strokeMiterlimit="10"
-                                                        stroke="currentColor"
-                                                        fill="none"
-                                                    >
-                                                        <rect x="3" y="1" width="7" height="12" />
-                                                        <rect x="3" y="17" width="7" height="6" />
-                                                        <rect x="14" y="1" width="7" height="6" />
-                                                        <rect x="14" y="11" width="7" height="12" />
-                                                    </svg>
-                                                    <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-                                                        Company
-                                                    </span>
-                                                </a>
-                                            </div>
-                                            <div>
-                                                <button
-                                                    aria-label="Close Menu"
-                                                    title="Close Menu"
-                                                    class="p-2 -mt-2 -mr-2 transition duration-200 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                                                    onClick={() => setIsMenuOpen(false)}
-                                                >
-                                                    <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
-                                                        <path
-                                                            fill="currentColor"
-                                                            d="M19.7,4.3c-0.4-0.4-1-0.4-1.4,0L12,10.6L5.7,4.3c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l6.3,6.3l-6.3,6.3 c-0.4,0.4-0.4,1,0,1.4C4.5,19.9,4.7,20,5,20s0.5-0.1,0.7-0.3l6.3-6.3l6.3,6.3c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3 c0.4-0.4,0.4-1,0-1.4L13.4,12l6.3-6.3C20.1,5.3,20.1,4.7,19.7,4.3z"
-                                                        />
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <nav>
-                                            <ul class="space-y-4">
-                                                <li>
-                                                    <a
-                                                        href="/"
-                                                        aria-label="Our product"
-                                                        title="Our product"
-                                                        class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                                                    >
-                                                        Product
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a
-                                                        href="/"
-                                                        aria-label="Our product"
-                                                        title="Our product"
-                                                        class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                                                    >
-                                                        Features
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a
-                                                        href="/"
-                                                        aria-label="Product pricing"
-                                                        title="Product pricing"
-                                                        class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                                                    >
-                                                        Pricing
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a
-                                                        href="/"
-                                                        aria-label="About us"
-                                                        title="About us"
-                                                        class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                                                    >
-                                                        About us
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a
-                                                        href="/"
-                                                        class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-                                                        aria-label="Sign up"
-                                                        title="Sign up"
-                                                    >
-                                                        Sign up
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                </div>
-                            )}
+                            </div>
+
+                            <div
+                                style={{ display: languageMenuOpen ? 'block' : 'none' }}
+                                className="absolute left-0 z-20 z-30 w-full p-3 mt-3 -ml-0 space-y-2 overflow-hidden transform bg-white shadow-lg lg:left-1/2 lg:-ml-24 md:w-48 rounded-xl ring-1 ring-black ring-opacity-5"
+                                data-rounded="rounded-xl"
+                                data-rounded-max="rounded-full"
+                            >
+                                <a href="?lang=EN" className="block px-4 py-3 text-sm text-gray-700 capitalize cursor-pointer hover:bg-gray-50 rounded-xl hover:text-gray-800" data-rounded="rounded-xl">
+                                    English
+                                </a>
+                                <a href="?lang=FR" className="block px-4 py-3 text-sm text-gray-700 capitalize cursor-pointer hover:bg-gray-50 rounded-xl hover:text-gray-800" data-rounded="rounded-xl">
+                                    French
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+
+                <div className={`${mobile ? 'flex' : 'hidden md:flex'} relative z-20 flex-col justify-center pr-5 mt-4 space-y-8 md:pr-3 lg:pr-0 md:flex-row md:space-y-0 md:items-center md:space-x-6 md:mt-0 hidden md:flex`}>
+                    <a className="flex-shrink-0 font-semibold  text-gray-900 hover:underline" href="https://wpbox.mobidonia.com/login">Login</a>
+                    <a href="https://wpbox.mobidonia.com/register" className="flex-shrink-0 rounded-full w-auto text-base font-semibold leading-5 text-left text-gray-800 capitalize bg-transparent md:text-sm md:py-3 md:px-8 md:font-medium md:text-center md:text-white md:bg-gray-900 md:mx-0" data-rounded="" data-primary="gray-900">
+                        Sign up
+                    </a>
+                </div>
+            </nav>
         </>
 
     );

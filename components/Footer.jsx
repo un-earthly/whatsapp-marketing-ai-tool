@@ -7,9 +7,7 @@ export default function Footer() {
           <p class="mt-4 text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l sm:border-gray-200 sm:mt-0">© 2024 Elevate Your Business with WhatsApp Marketing.
           </p>
           <span class="inline-flex justify-center mt-4 space-x-5 sm:ml-auto sm:mt-0 sm:justify-start">
-              <ul class="flex flex-row justify-center pb-3 -ml-4 -mr-4 text-sm font-bold">
-                  <li> <a href="#" class="px-2 text-gray-500 hover:text-gray-600">Privacy Policy</a> </li>
-              </ul>
+              
               <a href="#" class="text-gray-400 hover:text-gray-500">
                   <span class="sr-only">Facebook</span>
                   <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
