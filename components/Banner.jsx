@@ -19,13 +19,13 @@ export default function Banner() {
                 <p class="mt-8 mb-10 text-sm text-left text-gray-500 sm:text-base md:text-lg md:max-w-xxl md:text-center md:mx-auto">
                     Elevate Your Engagement: Exceptional Campaign Read Rates, Seamless Chats, AI-Driven Instant Bot Replies
                 </p>
-                <a href="https://wpbox.mobidonia.com/register" class="relative w-full px-12 py-5 mt-10 text-xl font-semibold leading-5 text-center text-white capitalize bg-gray-900 md:w-auto hover:bg-gray-800 focus:outline-none focus:bg-gray-800 md:mx-0 rounded-full" >
+                <a href="" class="relative w-full px-12 py-5 mt-10 text-xl font-semibold leading-5 text-center text-white capitalize bg-gray-900 md:w-auto hover:bg-gray-800 focus:outline-none focus:bg-gray-800 md:mx-0 rounded-full" >
                     Start now
                 </a>
             </div>
 
             <div class="box-content relative w-full h-64 max-w-6xl pb-0 mx-auto mt-16 overflow-hidden rounded-b-none lg:pb-32 md:h-88 lg:h-96 rounded-2xl" data-rounded="rounded-2xl" data-rounded-max="rounded-full">
-                <img src="https://wpbox.mobidonia.com/uploads/default/wpbox/header.png" class="absolute object-cover object-top w-full h-auto" />
+                <img src="/banner.png" class="absolute object-cover object-top w-full h-auto" />
             </div>
             <section class="bg-white">
                 <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">

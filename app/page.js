@@ -10,6 +10,7 @@ import MarketingBanner from '@/components/MarketingBanner'
 import Testimonials from '@/components/Testimonials'
 import SingleFeatureSection from '@/components/SingleFeatureSection'
 import CTA from '@/components/CTA'
+import NotchSection from '@/components/NotchSection'
 
 export default function Home() {
   const testimonialsData = [
@@ -72,7 +73,8 @@ export default function Home() {
     <main>
       <Nav />
       <Banner />
-      <Features />
+      {/* <Features /> */}
+      <NotchSection />
       <Demo />
       <MarketingBanner />
       <SingleFeatureSection />
