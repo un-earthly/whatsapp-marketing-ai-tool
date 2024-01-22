@@ -1,6 +1,7 @@
+'use client'
 import Banner from '@/components/Banner'
-import Faq from '@/components/Faq'      
-import Pricing from '@/components/Pricing.jsx'      
+import Faq from '@/components/Faq'
+import Pricing from '@/components/Pricing.jsx'
 import Footer from '@/components/Footer'
 import { Nav } from '@/components/Navbar'
 import Image from 'next/image'
@@ -11,7 +12,7 @@ import Testimonials from '@/components/Testimonials'
 import SingleFeatureSection from '@/components/SingleFeatureSection'
 import CTA from '@/components/CTA'
 import NotchSection from '@/components/NotchSection'
-
+import { motion } from 'framer-motion'
 export default function Home() {
   const testimonialsData = [
     {
@@ -75,13 +76,51 @@ export default function Home() {
       <Banner />
       {/* <Features /> */}
       <NotchSection />
-      <Demo />
-      <MarketingBanner />
-      <SingleFeatureSection />
-      <Testimonials data={testimonialsData} />
-      <Pricing />
-      <Faq />
-      <CTA />
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+      >
+        <Demo />
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+      >
+        <MarketingBanner />
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+      >
+        <SingleFeatureSection />
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+      >
+        <Testimonials data={testimonialsData} />
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+      >
+        <Pricing />
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+      >
+        <Faq />
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+      >
+        <CTA />
+
+      </motion.div>
       <Footer />
     </main>
   )
