@@ -4,7 +4,7 @@ import FeatureSpan from './FeatureSpan';
 import {motion} from "framer-motion"
 export default function NotchSection() {
     const [openTab, setOpenTab] = React.useState(1);
-    const [color] = useState("black")
+    const [color] = useState("[#003a46]")
     return (
         <div>
             {/* tab */}
@@ -14,7 +14,7 @@ export default function NotchSection() {
                         {/* <p className='text-blue-400 uppercase text-sm mb-4 font-semibold'>OUR flexible prices</p> */}
                         <h2 class="mb-4 text-5xl tracking-tight font-semibold text-gray-900">Who is LancePilot for?
                         </h2>
-                        <p class="mb-5 font-light text-gray-500 w-2/3 mx-auto">Notch is covering the buying process from the first demo to the sales-handover, helping you to impress buyers, increase deal win rates, and onboard customers smooth than ever.
+                        <p class="mb-5 font-light text-base text-gray-500 mx-auto">Notch is covering the buying process from the first demo to the sales-handover, helping you to impress buyers, increase deal win rates, and onboard customers smooth than ever.
 
                         </p>
                     </div>
@@ -40,7 +40,7 @@ export default function NotchSection() {
                                         href="#link1"
                                         role="tablist"
                                     >
-                                        <a href="#" class={`inline-block px-4 py-3  ${openTab === 1 ? 'bg-black text-white' : 'border-black text-black'} border-2 rounded-full `} >Sales Manager</a>
+                                        <a href="#" class={`inline-block px-4 py-2 ${openTab === 1 ? 'bg-[#003a46] text-white' : 'border-[#003a46] text-[#003a46]'} border-2 rounded-full `} >Sales Manager</a>
 
                                     </a>
                                 </li>
@@ -60,7 +60,7 @@ export default function NotchSection() {
                                         href="#link2"
                                         role="tablist"
                                     >
-                                        <a href="#" class={`inline-block px-4 py-3 ${openTab === 2 ? 'bg-black text-white' : 'border-black text-black'} border-2 rounded-full `} >Head of sales</a>
+                                        <a href="#" class={`inline-block px-4 py-2 ${openTab === 2 ? 'bg-[#003a46] text-white' : 'border-[#003a46] text-[#003a46]'} border-2 rounded-full `} >Head of sales</a>
 
                                     </a>
                                 </li>
@@ -80,7 +80,7 @@ export default function NotchSection() {
                                         href="#link3"
                                         role="tablist"
                                     >
-                                        <a href="#" class={`inline-block px-4 py-3  border-2 rounded-full ${openTab === 3 ? 'bg-black text-white' : 'border-black text-black'} `} >Account Executive</a>
+                                        <a href="#" class={`inline-block px-4 py-2 border-2 rounded-full ${openTab === 3 ? 'bg-[#003a46] text-white' : 'border-[#003a46] text-[#003a46]'} `} >Account Executive</a>
 
                                     </a>
                                 </li>
@@ -103,8 +103,8 @@ export default function NotchSection() {
                                                         <FeatureSpan item="Automate your customer data with Integrations" />
                                                     </div>
                                                     <div className='space-x-4'>
-                                                        <a href="#" class={`inline-block px-7 py-3 border-2 text-sm rounded-full bg-black text-white`} >Get 14 day Free Trial</a>
-                                                        <a href="#" class={`inline-block px-7 py-3 border-2 text-sm rounded-full border-black text-black `} >Book a demo</a>
+                                                        <a href="#" class={`inline-block px-7 py-3 border-2 text-sm rounded-full bg-[#003a46] text-white`} >Get 14 day Free Trial</a>
+                                                        <a href="#" class={`inline-block px-7 py-3 border-2 text-sm rounded-full border-[#003a46] text-[#003a46] `} >Book a demo</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -124,8 +124,8 @@ export default function NotchSection() {
                                                         <FeatureSpan item="Automate your customer data with Integrations" />
                                                     </div>
                                                     <div className='space-x-4'>
-                                                        <a href="#" class={`inline-block px-7 py-3 border-2 text-sm rounded-full bg-black text-white`} >Get 14 day Free Trial</a>
-                                                        <a href="#" class={`inline-block px-7 py-3 border-2 text-sm rounded-full border-black text-black `} >Book a demo</a>
+                                                        <a href="#" class={`inline-block px-7 py-3 border-2 text-sm rounded-full bg-[#003a46] text-white`} >Get 14 day Free Trial</a>
+                                                        <a href="#" class={`inline-block px-7 py-3 border-2 text-sm rounded-full border-[#003a46] text-[#003a46] `} >Book a demo</a>
                                                     </div>
                                                 </div>
                                             </div>

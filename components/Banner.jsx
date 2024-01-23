@@ -16,7 +16,7 @@ export default function Banner() {
                     <span class="">Whats Box:</span> <span class="block w-full py-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-green-400 to-purple-500 lg:inline" data-primary="green-400">Turbocharge Your</span> <span class="">WhatsApp Marketing 🚀</span>
                 </h1>
 
-                <p class="mt-8 mb-10 text-sm text-left text-gray-500 sm:text-base md:text-lg md:max-w-xxl md:text-center md:mx-auto">
+                <p class="mt-8 mb-7 text-sm text-left text-gray-500 sm:text-base md:text-base md:max-w-xxl md:text-center md:mx-auto">
                     Elevate Your Engagement: Exceptional Campaign Read Rates, Seamless Chats, AI-Driven Instant Bot Replies
                 </p>
                 <a href="" class="relative w-full px-12 py-3 mt-10 text-xl font-semibold leading-5 text-center text-white capitalize bg-[#003a46] md:w-auto hover:bg-gray-800 focus:outline-none focus:bg-gray-800 md:mx-0 rounded-full" >
@@ -24,7 +24,7 @@ export default function Banner() {
                 </a>
             </div>
 
-            <div class="flex items-center justify-center relative w-full max-w-6xl mx-auto my-32 overflow-hidden bg-[#003a46] rounded-t-none rounded-2xl lg:p-20" >
+            <div class="flex items-center justify-center relative w-full max-w-6xl mx-auto my-20 overflow-hidden bg-[#003a46] rounded-t-none rounded-2xl lg:p-20" >
                 <img src="/banner.png" class="rounded-2xl" />
             </div>
             <section class="bg-white">

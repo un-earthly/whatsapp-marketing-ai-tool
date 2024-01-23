@@ -90,18 +90,19 @@ export const Nav = () => {
                                 </a> */}
                             </div>
                         </div>
-                        <a className="py-3 text-gray-800 hover:text-gray-700 hover:underline" href="#demo">Demo</a>
+                        <a className="py-3 text-gray-800 hover:text-gray-700 hover:underline" href="#demo">Resources</a>
+                        <a className="py-3 text-gray-800 hover:text-gray-700 hover:underline" href="#demo">Use Cases</a>
                         <a className="py-3 text-gray-800 hover:text-gray-700 hover:underline" href="#pricing">Pricing</a>
                         <a className="py-3 text-gray-800 hover:text-gray-700 hover:underline" href="#faq">FAQ</a>
-
-                        <div onMouseEnter={toggleLanguageMenu} onMouseLeave={toggleLanguageMenu} className="relative py-3">
+                        {/* onMouseEnter={toggleLanguageMenu} onMouseLeave={toggleLanguageMenu} */}
+                        <div  className="relative py-3">
                             <div className="relative z-10 flex items-center space-x-1 text-gray-800 cursor-pointer lg:space-x-3 hover:text-gray-700 focus:outline-none">
                                 <span>
                                     <span className="nav-link-inner--text">English</span>
                                 </span>
-                                <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                {/* <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                                     <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd"></path>
-                                </svg>
+                                </svg> */}
                             </div>
 
                             <div
