@@ -28,7 +28,7 @@ export default function Banner() {
                 <img src="/banner.png" class="rounded-2xl" />
             </div>
             <section class="bg-white">
-                <div class="py-8 lg:py-16 mx-auto max-w-screen-xl px-4">
+                <div class="py-8 lg:pb-16 mx-auto max-w-screen-xl px-4">
                     <h2 class=" text-3xl font-semibold text-gray-700 text-center md:text-5xl">Founders & Marketers Love Us</h2>
                     <p className='mb-8 my-3 lg:mb-16'>Join thousands of Lance Pilot Businesses Today</p>
                     <marquee behavior="" direction="">

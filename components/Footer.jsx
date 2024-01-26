@@ -12,7 +12,7 @@ export default function Footer() {
                         <span class="font-bold text-3xl">LancePilot</span>
                     </a>
                     <p class="mt-2 text-sm text-gray-500 font-medium">Leave spreadsheets and lost buyer follow-up emails in the past. LancePilot helps you create structured and engaging sales process that ensures your buyer completes the right tasks at the right time.</p>
-                    <a id="" href="#" class="inline-flex items-center text-sm justify-center w-48 h-10 mt-5 rounded-full bg-[#003a46] text-white">Book A Demo
+                    <a id="" href="#" class="inline-flex items-center text-sm justify-center w-40 h-10 mt-5 rounded-full bg-[#003a46] text-white">Book A Demo
                     </a>
                     <div className="mt-6">
                         <img className=' border border-[#003a46] p-2 rounded-full' src="https://assets-global.website-files.com/6470b7a72717e3daa364db1d/6470b7a72717e3daa364db49_Linkedin-icon.svg" alt="" />
@@ -20,7 +20,7 @@ export default function Footer() {
                 </div>
                 <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
                     <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                        <h2 class="title-font font-bold text-gray-900 text-sm mb-3">Product</h2>
+                        <h2 class="title-font font-semibold text-gray-900 mb-3">Product</h2>
                         <nav class="list-none space-y-4 mb-10">
                             <li>
                                 <a class="text-gray-400 text-sm hover:text-gray-800">Spaces</a>
@@ -37,7 +37,7 @@ export default function Footer() {
                         </nav>
                     </div>
                     <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                        <h2 class="title-font font-bold text-gray-900 text-sm mb-3">Company</h2>
+                        <h2 class="title-font font-semibold text-gray-900 mb-3">Company</h2>
                         <nav class="list-none mb-10 space-y-4 ">
                             <li>
                                 <a class="text-gray-400 text-sm hover:text-gray-800">Sign in</a>
@@ -51,7 +51,7 @@ export default function Footer() {
                         </nav>
                     </div>
                     <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                        <h2 class="title-font font-bold text-gray-900 text-sm mb-3">Templates</h2>
+                        <h2 class="title-font font-semibold text-gray-900 mb-3">Templates</h2>
                         <nav class="list-none mb-10 space-y-4 ">
                             <li>
                                 <a class="text-gray-400 text-sm hover:text-gray-800">Sales Proposal</a>
@@ -71,7 +71,7 @@ export default function Footer() {
                         </nav>
                     </div>
                     <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                        <h2 class="title-font font-bold text-gray-900 text-sm mb-3">Comparison</h2>
+                        <h2 class="title-font font-semibold text-gray-900 mb-3">Comparison</h2>
                         <nav class="list-none mb-10 space-y-4 ">
                             <li>
                                 <a class="text-gray-400 text-sm hover:text-gray-800">Get Accept</a>

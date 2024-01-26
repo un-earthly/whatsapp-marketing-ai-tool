@@ -26,7 +26,7 @@ export default function CTA() {
                         <div>
                             {tab === 2 ? <a id="" class="inline-flex cursor-pointer items-center text-sm justify-center w-80 h-14 rounded-full bg-[#003a46] text-white">Smooth handover to customer success
 
-                            </a> : <button onClick={(e) => { e.preventDefault(); setTab(2)}} className='p-4'>Smooth handover to customer success</button>}
+                            </a> : <button onClick={(e) => { e.preventDefault(); setTab(2) }} className='p-4'>Smooth handover to customer success</button>}
                             <div className={`${tab === 2 ? "flex" : "hidden"}`}>
                                 <div className='p-4 w-4/5'>
                                     <p className='w-10/12 font-light'>Follow up on prospects with proposals that stand out from competition.</p>
@@ -59,7 +59,7 @@ export default function CTA() {
                     </div>
                 </div>
             </div>
-            <div class="py-10">
+            <div class="py-10 rounded-xl mt-10  text-white bg-[#003a46] ">
                 <div class="my-10">
                     <div class="space-y-6">
                         <div class="w-6/12 mx-auto">
@@ -69,12 +69,11 @@ export default function CTA() {
                             <h2 class="font-semibold md:text-3xl text-center">
                                 Ready to take control of your sales?</h2>
                         </div>
-                        <div class="relative w-3/6 mb-4 mx-auto">
-                            <input type="email" id="email" name="email" class="w-full bg-white rounded-full border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-5 leading-8 transition-colors duration-200 ease-in-out " placeholder='Enter Email'/>
-                        </div>
+                        {/* <div class="relative w-3/6 mb-4 mx-auto">
+                            <input type="email" id="email" name="email" class="w-full bg-white rounded-full border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-5 leading-8 transition-colors duration-200 ease-in-out " placeholder='Enter Email' />
+                        </div> */}
                         <div id="" class="flex items-center justify-center">
-                            <a id="" href="#" class="inline-flex items-center text-sm justify-center w-48 h-10 rounded-full bg-[#003a46] text-white">Get started
-                                <span class="">— it&apos;s free</span>
+                            <a id="" href="#" class="inline-flex items-center text-sm justify-center w-48 h-10 rounded-full bg-white text-[#003a46]">Book A Call
                             </a>
                         </div>
                     </div>
