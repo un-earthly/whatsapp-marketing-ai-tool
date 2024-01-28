@@ -14,7 +14,68 @@ export default function Pricing() {
                 </div>
 
 
+                <ul
+                    className="flex mb-0  max-w-xl mx-auto list-none flex-wrap pt-3 pb-4 flex-row"
+                    role="tablist"
+                >
+                    <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
+                        <a
+                            className={
+                                "text-xs font-bold uppercase  rounded block leading-normal "
+                            }
+                            onClick={e => {
+                                e.preventDefault();
+                                setOpenTab(1);
+                            }}
+                            data-toggle="tab"
+                            href="#link1"
+                            role="tablist"
+                        >
+                            <a href="#" class={`inline-block px-4 py-2 ${openTab === 1 ? 'bg-[#003a46] text-white' : 'border-[#003a46] text-[#003a46]'} border-2 rounded-full `} >Sales Manager</a>
 
+                        </a>
+                    </li>
+                    <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
+                        <a
+                            className={
+                                "text-xs font-bold uppercase  rounded block leading-normal " +
+                                (openTab === 2
+                                    ? "text-white bg-" + color + "-600"
+                                    : "text-" + color + "-600 bg-white")
+                            }
+                            onClick={e => {
+                                e.preventDefault();
+                                setOpenTab(2);
+                            }}
+                            data-toggle="tab"
+                            href="#link2"
+                            role="tablist"
+                        >
+                            <a href="#" class={`inline-block px-4 py-2 ${openTab === 2 ? 'bg-[#003a46] text-white' : 'border-[#003a46] text-[#003a46]'} border-2 rounded-full `} >Head of sales</a>
+
+                        </a>
+                    </li>
+                    <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
+                        <a
+                            className={
+                                "text-xs font-bold uppercase  rounded block leading-normal " +
+                                (openTab === 3
+                                    ? "text-white bg-" + color + "-600"
+                                    : "text-" + color + "-600 bg-white")
+                            }
+                            onClick={e => {
+                                e.preventDefault();
+                                setOpenTab(3);
+                            }}
+                            data-toggle="tab"
+                            href="#link3"
+                            role="tablist"
+                        >
+                            <a href="#" class={`inline-block px-4 py-2 border-2 rounded-full ${openTab === 3 ? 'bg-[#003a46] text-white' : 'border-[#003a46] text-[#003a46]'} `} >Account Executive</a>
+
+                        </a>
+                    </li>
+                </ul>
                 <div className="flex">
 
                     <div className="relative flex items-center justify-between gap-5 min-w-0 break-words bg-white w-full mb-6 rounded">
@@ -31,27 +92,27 @@ export default function Pricing() {
                             <ul role="list" class="mb-8 space-y-4 text-left">
                                 <li class="flex items-center space-x-3">
 
-                                    <svg class="flex-shrink-0 w-5 h-5  text-white rounded-full bg-[#003a46]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <svg class="flex-shrink-0 w-5 h-5  text-white rounded-full bg-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                                     <span>Individual configuration</span>
                                 </li>
                                 <li class="flex items-center space-x-3">
 
-                                    <svg class="flex-shrink-0 w-5 h-5 bg-[#003a46] text-white rounded-full" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <svg class="flex-shrink-0 w-5 h-5 bg-green-400 text-white rounded-full" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                                     <span>No setup, or hidden fees</span>
                                 </li>
                                 <li class="flex items-center space-x-3">
 
-                                    <svg class="flex-shrink-0 w-5 h-5 bg-[#003a46] text-white rounded-full" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <svg class="flex-shrink-0 w-5 h-5 bg-green-400 text-white rounded-full" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                                     <span>Team size: <span class="font-semibold">10 developers</span></span>
                                 </li>
                                 <li class="flex items-center space-x-3">
 
-                                    <svg class="flex-shrink-0 w-5 h-5 bg-[#003a46] text-white rounded-full" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <svg class="flex-shrink-0 w-5 h-5 bg-green-400 text-white rounded-full" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                                     <span>Premium support: <span class="font-semibold">24 months</span></span>
                                 </li>
                                 <li class="flex items-center space-x-3">
 
-                                    <svg class="flex-shrink-0 w-5 h-5 bg-[#003a46] text-white rounded-full" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <svg class="flex-shrink-0 w-5 h-5 bg-green-400 text-white rounded-full" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                                     <span>Free updates: <span class="font-semibold">24 months</span></span>
                                 </li>
                             </ul>
@@ -69,27 +130,27 @@ export default function Pricing() {
                             <ul role="list" class="mb-8 space-y-4 text-left">
                                 <li class="flex items-center space-x-3">
 
-                                    <svg class="flex-shrink-0 w-5 h-5  text-white rounded-full bg-[#003a46]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <svg class="flex-shrink-0 w-5 h-5  text-white rounded-full bg-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                                     <span>Individual configuration</span>
                                 </li>
                                 <li class="flex items-center space-x-3">
 
-                                    <svg class="flex-shrink-0 w-5 h-5 bg-[#003a46] text-white rounded-full" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <svg class="flex-shrink-0 w-5 h-5 bg-green-400 text-white rounded-full" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                                     <span>No setup, or hidden fees</span>
                                 </li>
                                 <li class="flex items-center space-x-3">
 
-                                    <svg class="flex-shrink-0 w-5 h-5 bg-[#003a46] text-white rounded-full" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <svg class="flex-shrink-0 w-5 h-5 bg-green-400 text-white rounded-full" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                                     <span>Team size: <span class="font-semibold">10 developers</span></span>
                                 </li>
                                 <li class="flex items-center space-x-3">
 
-                                    <svg class="flex-shrink-0 w-5 h-5 bg-[#003a46] text-white rounded-full" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <svg class="flex-shrink-0 w-5 h-5 bg-green-400 text-white rounded-full" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                                     <span>Premium support: <span class="font-semibold">24 months</span></span>
                                 </li>
                                 <li class="flex items-center space-x-3">
 
-                                    <svg class="flex-shrink-0 w-5 h-5 bg-[#003a46] text-white rounded-full" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <svg class="flex-shrink-0 w-5 h-5 bg-green-400 text-white rounded-full" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                                     <span>Free updates: <span class="font-semibold">24 months</span></span>
                                 </li>
                             </ul>
@@ -104,23 +165,23 @@ export default function Pricing() {
                             </div>
                             <ul role="list" class="mb-8 space-y-4 text-left">
                                 <li class="flex items-center space-x-3">
-                                    <svg class="flex-shrink-0 w-5 h-5 bg-[#003a46] text-white rounded-full" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <svg class="flex-shrink-0 w-5 h-5 bg-green-400 text-white rounded-full" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                                     <span>Individual configuration</span>
                                 </li>
                                 <li class="flex items-center space-x-3">
-                                    <svg class="flex-shrink-0 w-5 h-5 bg-[#003a46] text-white rounded-full" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <svg class="flex-shrink-0 w-5 h-5 bg-green-400 text-white rounded-full" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                                     <span>No setup, or hidden fees</span>
                                 </li>
                                 <li class="flex items-center space-x-3">
-                                    <svg class="flex-shrink-0 w-5 h-5 bg-[#003a46] text-white rounded-full" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <svg class="flex-shrink-0 w-5 h-5 bg-green-400 text-white rounded-full" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                                     <span>Team size: <span class="font-semibold">100+ developers</span></span>
                                 </li>
                                 <li class="flex items-center space-x-3">
-                                    <svg class="flex-shrink-0 w-5 h-5 bg-[#003a46] text-white rounded-full" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <svg class="flex-shrink-0 w-5 h-5 bg-green-400 text-white rounded-full" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                                     <span>Premium support: <span class="font-semibold">36 months</span></span>
                                 </li>
                                 <li class="flex items-center space-x-3">
-                                    <svg class="flex-shrink-0 w-5 h-5 bg-[#003a46] text-white rounded-full" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    <svg class="flex-shrink-0 w-5 h-5 bg-green-400 text-white rounded-full" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                                     <span>Free updates: <span class="font-semibold">36 months</span></span>
                                 </li>
                             </ul>

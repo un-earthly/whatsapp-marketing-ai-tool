@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Footer() {
     return (
-        <footer class="text-gray-400 max-w-7xl mx-auto body-font">
-            <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+        <footer class="text-gray-400 bg-[#F7F8F8] max-w-7xl mx-auto body-font">
+            <div class=" py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
                 <div class="w-72 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
                     <a class="flex title-font font-bold items-center justify-start text-gray-900">
                         {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
@@ -12,7 +12,7 @@ export default function Footer() {
                         <span class="font-bold text-3xl">LancePilot</span>
                     </a>
                     <p class="mt-2 text-sm text-gray-500 font-medium">Leave spreadsheets and lost buyer follow-up emails in the past. LancePilot helps you create structured and engaging sales process that ensures your buyer completes the right tasks at the right time.</p>
-                    <a id="" href="#" class="inline-flex items-center text-sm justify-center w-40 h-10 mt-5 rounded-full bg-[#003a46] text-white">Book A Demo
+                    <a id="" href="#" class="inline-flex items-center text-sm justify-center w-40 h-10 mt-5 rounded-full bg-[#003a46] text-white">Book A Call
                     </a>
                     <div className="mt-6">
                         <img className=' border border-[#003a46] p-2 rounded-full' src="https://assets-global.website-files.com/6470b7a72717e3daa364db1d/6470b7a72717e3daa364db49_Linkedin-icon.svg" alt="" />

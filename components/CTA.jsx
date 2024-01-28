@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 export default function CTA() {
     const [tab, setTab] = useState(1)
     return (
-        <div class="max-w-6xl mx-auto">
+        <div class="max-w-7xl mx-auto">
             <div className="flex items-center justify-center flex-col space-y-10">
                 <h2 className="text-5xl font-semibold w-2/3 text-center">Say goodbye to sales friction and hello to buyer success</h2>
                 <p className='w-2/4 text-center'>Leave spreadsheets and lost follow-up emails in the past. Give buyers all relevant information in one interactive space</p>
@@ -73,9 +73,11 @@ export default function CTA() {
                             <input type="email" id="email" name="email" class="w-full bg-white rounded-full border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-5 leading-8 transition-colors duration-200 ease-in-out " placeholder='Enter Email' />
                         </div> */}
                         <div id="" class="flex items-center justify-center">
-                            <a id="" href="#" class="inline-flex items-center text-sm justify-center w-48 h-10 rounded-full bg-white text-[#003a46]">Book A Call
+                            <a id="" href="#" class="inline-flex items-center text-sm justify-center w-48 h-10 rounded-full bg-white text-[#003a46]">Get Started
                             </a>
+
                         </div>
+                        <div className="mt-3 text-center">Get free consultation!</div>
                     </div>
                 </div>
             </div>

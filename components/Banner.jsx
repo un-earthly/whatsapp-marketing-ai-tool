@@ -13,7 +13,7 @@ export default function Banner() {
                     </div>
                 </div>
                 <h1 class="mb-8 text-4xl font-extrabold leading-none tracking-normal text-gray-900 md:text-6xl md:tracking-tight">
-                    <span class="">Whats Box:</span> <span class="block w-full py-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-green-400 to-purple-500 lg:inline" data-primary="green-400">Turbocharge Your</span> <span class="">WhatsApp Marketing 🚀</span>
+                    <span class="">LancePilot:</span> <span class="block w-full py-2 text-transparent bg-clip-text leading-12 bg-gradient-to-r from-green-400 to-purple-500 lg:inline" data-primary="green-400">Turbocharge Your</span> <span class="">WhatsApp Marketing 🚀</span>
                 </h1>
 
                 <p class="mt-8 mb-7 text-sm text-left text-gray-500 sm:text-base md:text-base md:max-w-xxl md:text-center md:mx-auto">
@@ -24,7 +24,7 @@ export default function Banner() {
                 </a>
             </div>
 
-            <div class="flex items-center justify-center relative w-full max-w-6xl mx-auto my-20 overflow-hidden bg-[#003a46] rounded-t-none rounded-2xl lg:p-20" >
+            <div class="flex items-center justify-center relative w-full max-w-6xl mx-auto my-20 overflow-hidden bg-[#003a46] rounded-2xl lg:p-20" >
                 <img src="/banner.png" class="rounded-2xl" />
             </div>
             <section class="bg-white">
