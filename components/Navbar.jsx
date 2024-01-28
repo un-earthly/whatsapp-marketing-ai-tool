@@ -160,7 +160,7 @@ export const Nav = () => {
                 <div className={`${mobile ? 'flex' : 'hidden md:flex'} relative z-20 flex-col justify-center pr-5 mt-4 space-y-8 md:pr-3 lg:pr-0 md:flex-row md:space-y-0 md:items-center md:space-x-6 md:mt-0 hidden md:flex`}>
                     <a className="flex-shrink-0 font-semibold  text-gray-900 hover:underline" href="https://wpbox.mobidonia.com/login">Login</a>
                     <a className="flex-shrink-0 font-semibold  text-gray-900 hover:underline" href="https://wpbox.mobidonia.com/login">Sign Up</a>
-                    <a href="#" className="flex-shrink-0 rounded-full w-auto text-base font-semibold leading-5 text-left text-gray-800 capitalize bg-transparent md:text-sm md:py-3 md:px-8 md:font-medium md:text-center md:text-white md:bg-[#003a46] md:mx-0" data-rounded="" data-primary="gray-900">
+                    <a href="#" className="flex-shrink-0 rounded-full w-auto text-base font-semibold leading-5 text-left text-gray-800 capitalize bg-transparent md:text-sm md:py-3 md:px-8 md:font-medium md:text-center md:text-white md:bg-[#F7F8F8] md:mx-0" data-rounded="" data-primary="gray-900">
                         Book A Call
                     </a>
                 </div>

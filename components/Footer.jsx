@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Footer() {
     return (
-        <footer class="text-gray-400 bg-[#F7F8F8] max-w-7xl mx-auto body-font">
+        <footer class="text-gray-400 bg-[#F7F8F8] px-10 mx-auto body-font">
             <div class=" py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
                 <div class="w-72 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
                     <a class="flex title-font font-bold items-center justify-start text-gray-900">
