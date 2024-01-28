@@ -40,7 +40,7 @@ export default function NotchSection() {
                                         href="#link1"
                                         role="tablist"
                                     >
-                                        <a href="#" class={`inline-block px-4 py-2 ${openTab === 1 ? 'bg-[#003a46] text-white' : 'border-[#003a46] text-[#003a46]'} border-2 rounded-full `} >Sales Manager</a>
+                                        <a href="#" class={`inline-block px-4 py-2 ${openTab === 1 ? 'bg-[#003a46] text-white' : 'border-[#003a46] text-[#003a46]'} border-2 rounded-full uppercase`} >monthly</a>
 
                                     </a>
                                 </li>
@@ -60,7 +60,7 @@ export default function NotchSection() {
                                         href="#link2"
                                         role="tablist"
                                     >
-                                        <a href="#" class={`inline-block px-4 py-2 ${openTab === 2 ? 'bg-[#003a46] text-white' : 'border-[#003a46] text-[#003a46]'} border-2 rounded-full `} >Head of sales</a>
+                                        <a href="#" class={`inline-block px-4 py-2 uppercase ${openTab === 2 ? 'bg-[#003a46] text-white' : 'border-[#003a46] text-[#003a46]'} border-2 rounded-full `} >Yearly</a>
 
                                     </a>
                                 </li>
@@ -80,7 +80,7 @@ export default function NotchSection() {
                                         href="#link3"
                                         role="tablist"
                                     >
-                                        <a href="#" class={`inline-block px-4 py-2 border-2 rounded-full ${openTab === 3 ? 'bg-[#003a46] text-white' : 'border-[#003a46] text-[#003a46]'} `} >Account Executive</a>
+                                        <a href="#" class={`inline-block px-4 py-2 border-2 uppercase rounded-full ${openTab === 3 ? 'bg-[#003a46] text-white' : 'border-[#003a46] text-[#003a46]'} `} >Lifetime</a>
 
                                     </a>
                                 </li>
