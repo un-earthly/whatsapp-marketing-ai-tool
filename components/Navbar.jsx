@@ -161,7 +161,7 @@ export const Nav = () => {
                     <a className="flex-shrink-0 font-semibold  text-gray-900 hover:underline" href="https://wpbox.mobidonia.com/login">Login</a>
                     <a className="flex-shrink-0 font-semibold  text-gray-900 hover:underline" href="https://wpbox.mobidonia.com/login">Sign Up</a>
                     <a href="#" className="flex-shrink-0 rounded-full w-auto text-base font-semibold leading-5 text-left text-gray-800 capitalize md:text-sm md:py-3 md:px-8 md:font-medium md:text-center md:text-white md:mx-0" style={{
-                        backgroundColor: "#F7F8F8"
+                        backgroundColor: "#00bf63"
                     }} data-rounded="" data-primary="gray-900">
                         Book A Call
                     </a>
