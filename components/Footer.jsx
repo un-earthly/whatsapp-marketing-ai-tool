@@ -14,8 +14,19 @@ export default function Footer() {
                     <p class="mt-2 text-sm text-gray-500 font-medium">Leave spreadsheets and lost buyer follow-up emails in the past. LancePilot helps you create structured and engaging sales process that ensures your buyer completes the right tasks at the right time.</p>
                     <a id="" href="#" class="inline-flex items-center text-sm justify-center w-40 h-10 mt-5 rounded-full bg-[#003a46] text-white">Book A Call
                     </a>
-                    <div className="mt-6">
-                        <img className=' border border-[#003a46] p-2 rounded-full' src="https://assets-global.website-files.com/6470b7a72717e3daa364db1d/6470b7a72717e3daa364db49_Linkedin-icon.svg" alt="" />
+                    <div className="flex space-x-3">
+                        <div className="mt-6">
+                            <img className=' border border-[#003a46] p-2 rounded-full' src="https://assets-global.website-files.com/6470b7a72717e3daa364db1d/6470b7a72717e3daa364db49_Linkedin-icon.svg" alt="" />
+                        </div>
+                        <div className="mt-6 ">
+                            <img className='h-10 border border-[#003a46] p-2 rounded-full' src="https://www.svgrepo.com/show/353655/discord-icon.svg" alt="" />
+                        </div>
+                        <div className="mt-6">
+                            <img className='h-10 border border-[#003a46] p-2 rounded-full' src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/768px-WhatsApp.svg.png" alt="" />
+                        </div>
+                        <div className="mt-6">
+                            <img className='h-10 border border-[#003a46] p-2 rounded-full' src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/X_logo_2023_original.svg/450px-X_logo_2023_original.svg.png" alt="" />
+                        </div>
                     </div>
                 </div>
                 <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
